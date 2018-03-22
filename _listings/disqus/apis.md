@@ -31,7 +31,7 @@ apis:
   tags: Threads
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-restore-json-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-set-json-get.md
 x-common:
 - type: x-base
   url: https://disqus.com/api/
