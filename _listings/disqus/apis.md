@@ -31,7 +31,7 @@ apis:
   tags: Threads
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-update-json-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-vote-json-post.md
 x-common:
 - type: x-base
   url: https://disqus.com/api/
