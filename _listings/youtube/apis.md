@@ -12,8 +12,8 @@ tags:
 - Stack Network
 - Stack
 - Google APIs
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/youtube/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -26,7 +26,7 @@ apis:
   tags: Threads
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/youtube/commentthreads-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/youtube/commentthreads-get.md
 x-common:
 - type: x-articles
   url: https://developers.google.com/youtube/articles/
