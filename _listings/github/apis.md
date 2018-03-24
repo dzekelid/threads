@@ -40,7 +40,7 @@ apis:
   tags: Threads
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-put.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
