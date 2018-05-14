@@ -1,9 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Disqus
-  description: Welcome to the Disqus Web API. The API enables developers to communicate
-    with Disqus data from within their own applications.
+  title: Disqus Threads ListUsersVotedThread
+  description: Threads ListUsersVotedThread
   termsOfService: https://docs.disqus.com/kb/terms-and-policies/
   version: 1.0.0
 host: disqus.com
@@ -15,10 +14,8 @@ produces:
 consumes:
 - application/json
 paths:
-  ? |2-
-
-        /threads/listUsersVotedThread.json
-  : get:
+  /threads/listUsersVotedThread.json:
+    get:
       summary: Threads ListUsersVotedThread
       description: "\n     Threads ListUsersVotedThread "
       operationId: threads-listusersvotedthread
