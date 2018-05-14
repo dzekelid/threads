@@ -1,9 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Disqus
-  description: Welcome to the Disqus Web API. The API enables developers to communicate
-    with Disqus data from within their own applications.
+  title: Disqus Threads ListHot
+  description: Threads ListHot
   termsOfService: https://docs.disqus.com/kb/terms-and-policies/
   version: 1.0.0
 host: disqus.com
@@ -15,10 +14,8 @@ produces:
 consumes:
 - application/json
 paths:
-  ? |2-
-
-        /threads/listHot.json
-  : get:
+  /threads/listHot.json:
+    get:
       summary: Threads ListHot
       description: "\n     Threads ListHot "
       operationId: threads-listhot
@@ -61,16 +58,16 @@ paths:
 definitions: []
 x-collection-name: Disqus
 x-streamrank:
-  polling_total_time_average: 0
-  polling_size_download_average: 0
-  streaming_total_time_average: 0
-  streaming_size_download_average: 0
-  change_yes: 0
-  change_no: 0
-  time_percentage: 0
-  size_percentage: 0
-  change_percentage: 0
-  last_run: ""
-  days_run: 0
-  minute_run: 0
+  polling_total_time_average: "0.34"
+  polling_size_download_average: "24605.28"
+  streaming_total_time_average: "0.17"
+  streaming_size_download_average: "12313.79"
+  change_yes: "329"
+  change_no: "868"
+  time_percentage: "49"
+  size_percentage: "50"
+  change_percentage: "27"
+  last_run: "2018-05-12"
+  days_run: "8"
+  minute_run: "0"
 ---
