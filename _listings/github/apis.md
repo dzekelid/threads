@@ -41,17 +41,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-put.md
-- name: Github Delete Notifications Threads  Subscription
-  description: Delete a Thread Subscription.
+- name: Github Get Notifications Threads  Subscription
+  description: Get a Thread Subscription.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Threads
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
