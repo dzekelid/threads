@@ -27,17 +27,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/youtube/commentthreads-put.md
-- name: Youtube Parameters Comment Threads
-  description: Parameters commentthreads
+- name: Youtube Add Comment Threads
+  description: Creates a new top-level comment. To add a reply to an existing comment,
+    use the comments.insert method instead.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/youtube-logo.png
   humanURL: https://www.youtube.com/
   baseURL: https://www.googleapis.com//youtube/v1
   tags: Threads
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/youtube/commentthreads-parameters.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/youtube/commentthreads-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/youtube/commentthreads-post.md
 x-common:
 - type: x-articles
   url: https://developers.google.com/youtube/articles/
