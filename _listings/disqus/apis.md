@@ -32,15 +32,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-vote-json-post.md
-- name: Disqus Threads ListUsersVotedThread
-  description: Threads ListUsersVotedThread
+- name: Disqus Threads Open
+  description: Threads Open
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/disqus-logo-icon-750.jpg
   humanURL: https://disqus.com/
   baseURL: https://disqus.com/api/3.0/
   tags: Threads
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-listusersvotedthread-json-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-open-json-post.md
 x-common:
 - type: x-base
   url: https://disqus.com/api/
