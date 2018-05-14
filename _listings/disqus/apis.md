@@ -32,15 +32,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-vote-json-post.md
-- name: Disqus Threads Remove
-  description: Threads Remove
+- name: Disqus Threads Restore
+  description: Threads Restore
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/disqus-logo-icon-750.jpg
   humanURL: https://disqus.com/
   baseURL: https://disqus.com/api/3.0/
   tags: Threads
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-remove-json-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/disqus/threads-restore-json-post.md
 x-common:
 - type: x-base
   url: https://disqus.com/api/
