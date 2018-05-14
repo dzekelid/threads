@@ -41,17 +41,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-put.md
-- name: Github Get Notifications Threads  Subscription
-  description: Get a Thread Subscription.
+- name: Github Put Notifications Threads  Subscription
+  description: |-
+    Set a Thread Subscription.
+    This lets you subscribe to a thread, or ignore it. Subscribing to a thread
+    is unnecessary if the user is already subscribed to the repository. Ignoring
+    a thread will mute all future notifications (until you comment or get @mentioned).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Threads
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notifications-threads-id-subscription-put.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
