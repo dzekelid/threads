@@ -8,61 +8,77 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "64"
 tags: Threads
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Github Get Notifications Threads
-  x-api-slug: github
+- name: GitHub - Get Notifications Threads
+  x-api-slug: notificationsthreadsid-get
   description: View a single thread.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////notifications/threads/{id}
-  tags: Notifications, Threads
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notificationsthreadsid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notificationsthreadsid-get-openapi.md
-- name: Github Patch Notifications Threads
-  x-api-slug: github
+- name: GitHub - Patch Notifications Threads
+  x-api-slug: notificationsthreadsid-patch
   description: Mark a thread as read
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////notifications/threads/{id}
-  tags: Notifications, Threads
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notificationsthreadsid-patch-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notificationsthreadsid-patch-openapi.md
-- name: Github Delete Notifications Threads  Subscription
-  x-api-slug: github
+- name: GitHub - Delete Notifications Threads  Subscription
+  x-api-slug: notificationsthreadsidsubscription-delete
   description: Delete a Thread Subscription.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////notifications/threads/{id}/subscription
-  tags: Notifications, Threads, , Subscription
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notificationsthreadsidsubscription-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notificationsthreadsidsubscription-delete-openapi.md
-- name: Github Get Notifications Threads  Subscription
-  x-api-slug: github
+- name: GitHub - Get Notifications Threads  Subscription
+  x-api-slug: notificationsthreadsidsubscription-get
   description: Get a Thread Subscription.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////notifications/threads/{id}/subscription
-  tags: Notifications, Threads, , Subscription
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notificationsthreadsidsubscription-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notificationsthreadsidsubscription-get-openapi.md
-- name: Github Put Notifications Threads  Subscription
-  x-api-slug: github
+- name: GitHub - Put Notifications Threads  Subscription
+  x-api-slug: notificationsthreadsidsubscription-put
   description: |-
     Set a Thread Subscription.
     This lets you subscribe to a thread, or ignore it. Subscribing to a thread
@@ -70,26 +86,22 @@ apis:
     a thread will mute all future notifications (until you comment or get @mentioned).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
-  baseURL: https://api.github.com////notifications/threads/{id}/subscription
-  tags: Notifications, Threads, , Subscription
+  baseURL: https://api.github.com//
+  tags: Social, Coding, Programming, Social, Jobs, Hacker Storytelling, Code, My API
+    Stack, Management, Imports, Issues, Issue Management, Change Log Example, Stack
+    Network, Stack, SaaS, Technology, Developers, API Provider, API Service Provider,
+    Profiles, General Data, Relative Data, Pedestal, Historical Data API, Relative
+    StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/notificationsthreadsidsubscription-put-openapi.md
-- name: Github
-  x-api-slug: github
-  description: GitHub brings together the worlds largest community of developers to
-    discover, share, and build better software. From open source projects to private
-    team repositories, were your all-in-one platform for collaborative development.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
-  humanURL: https://github.com
-  baseURL: https://api.github.com//
-  tags: Threads
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/github/openapi.md
 x-common:
 - type: x--net-library
   url: https://github.com/octokit/octokit.net
+- type: x-api-gallery
+  url: http://giphy.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://github.stack.network
 - type: x-base
   url: https://api.github.com
 - type: x-blog

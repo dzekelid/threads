@@ -6,40 +6,42 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-contex
 x-kinRank: "9"
 x-alexaRank: "569975"
 tags: Threads
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Context.IO Get Accounts Contacts Email Threads
-  x-api-slug: context-io
+- name: Context.IO - Get Accounts Contacts Email Threads
+  x-api-slug: accountsidcontactsemailthreads-get
   description: Lists threads where a contact is present. Returns the latest email
     threads exchanged with one or more email addresses. By "exchanged with Mr. X"
     we mean any email received from Mr. X, sent to Mr. X or sent by anyone to both
     Mr. X and the mailbox owner.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
   humanURL: http://context.io/
-  baseURL: https://api.context.io//2.0///accounts/{id}/contacts/{email}/threads
-  tags: Accounts,Contacts,Email,Threads
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidcontactsemailthreads-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidcontactsemailthreads-get-openapi.md
-- name: Context.IO Get Accounts Threads
-  x-api-slug: context-io
+- name: Context.IO - Get Accounts Threads
+  x-api-slug: accountsidthreads-get
   description: Lists threads on an account.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
   humanURL: http://context.io/
-  baseURL: https://api.context.io//2.0///accounts/{id}/threads
-  tags: Accounts,Threads
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreads-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreads-get-openapi.md
-- name: Context.IO Get Accounts Threads Thread
-  x-api-slug: context-io
+- name: Context.IO - Get Accounts Threads Thread
+  x-api-slug: accountsidthreadsthread-id-get
   description: |-
     Returns files, contacts and messages on a given thread. The purpose is to allow Gmail extensions to easily retrieve data when users's load a conversation in the Gmail UI. Hence, threads are identified by the value of their Gmail thread prefixed with "gm-".
     For example, if the URL of a conversation in the Gmail UI is https://mail.google.com/mail/u/0/#mbox/13119ab37f00b826, you would obtain the details about this thread by calling:
@@ -49,25 +51,150 @@ apis:
     You can retrieve thread information for any message using the Thread resource of that message.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
   humanURL: http://context.io/
-  baseURL: https://api.context.io//2.0///accounts/{id}/threads/{thread_id}
-  tags: Accounts,Threads,Thread
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreadsthread-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreadsthread-id-get-openapi.md
-- name: Context.IO
-  x-api-slug: context-io
-  description: Context.IO is the missing email API that makes it easy and fastto integrate
-    your users email data in your application.
+- name: Context.IO - Get Accounts Messages Message Thread
+  x-api-slug: accountsidmessagesmessage-idthread-get
+  description: Gets information about all messages of the thread a given message is
+    in. This returns an array with the same structure as getting information on a
+    single message for every message in the thread.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
   humanURL: http://context.io/
   baseURL: https://api.context.io//2.0/
-  tags: Threads
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidmessagesmessage-idthread-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidmessagesmessage-idthread-get-openapi.md
+- name: Context.IO - Get Accounts Threads Thread
+  x-api-slug: accountsidthreadsthread-id-get
+  description: |-
+    Returns files, contacts and messages on a given thread. The purpose is to allow Gmail extensions to easily retrieve data when users's load a conversation in the Gmail UI. Hence, threads are identified by the value of their Gmail thread prefixed with "gm-".
+    For example, if the URL of a conversation in the Gmail UI is https://mail.google.com/mail/u/0/#mbox/13119ab37f00b826, you would obtain the details about this thread by calling:
+    GET https://api.context.io/2.0/accounts/<accountId>/threads/gm-13119ab37f00b826
+
+    What about threads on non-Gmail mailboxes?
+    You can retrieve thread information for any message using the Thread resource of that message.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreadsthread-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreadsthread-id-get-openapi.md
+- name: Context.IO - Get Accounts Messages Message Thread
+  x-api-slug: accountsidmessagesmessage-idthread-get
+  description: Gets information about all messages of the thread a given message is
+    in. This returns an array with the same structure as getting information on a
+    single message for every message in the thread.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidmessagesmessage-idthread-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidmessagesmessage-idthread-get-openapi.md
+- name: Context.IO - Get Accounts Threads Thread
+  x-api-slug: accountsidthreadsthread-id-get
+  description: |-
+    Returns files, contacts and messages on a given thread. The purpose is to allow Gmail extensions to easily retrieve data when users's load a conversation in the Gmail UI. Hence, threads are identified by the value of their Gmail thread prefixed with "gm-".
+    For example, if the URL of a conversation in the Gmail UI is https://mail.google.com/mail/u/0/#mbox/13119ab37f00b826, you would obtain the details about this thread by calling:
+    GET https://api.context.io/2.0/accounts/<accountId>/threads/gm-13119ab37f00b826
+
+    What about threads on non-Gmail mailboxes?
+    You can retrieve thread information for any message using the Thread resource of that message.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreadsthread-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreadsthread-id-get-openapi.md
+- name: Context.IO - Get Accounts Contacts Email Threads
+  x-api-slug: accountsidcontactsemailthreads-get
+  description: Lists threads where a contact is present. Returns the latest email
+    threads exchanged with one or more email addresses. By "exchanged with Mr. X"
+    we mean any email received from Mr. X, sent to Mr. X or sent by anyone to both
+    Mr. X and the mailbox owner.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidcontactsemailthreads-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidcontactsemailthreads-get-openapi.md
+- name: Context.IO - Get Accounts Threads
+  x-api-slug: accountsidthreads-get
+  description: Lists threads on an account.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreads-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreads-get-openapi.md
+- name: Context.IO - Get Accounts Threads Thread
+  x-api-slug: accountsidthreadsthread-id-get
+  description: |-
+    Returns files, contacts and messages on a given thread. The purpose is to allow Gmail extensions to easily retrieve data when users's load a conversation in the Gmail UI. Hence, threads are identified by the value of their Gmail thread prefixed with "gm-".
+    For example, if the URL of a conversation in the Gmail UI is https://mail.google.com/mail/u/0/#mbox/13119ab37f00b826, you would obtain the details about this thread by calling:
+    GET https://api.context.io/2.0/accounts/<accountId>/threads/gm-13119ab37f00b826
+
+    What about threads on non-Gmail mailboxes?
+    You can retrieve thread information for any message using the Thread resource of that message.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreadsthread-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidthreadsthread-id-get-openapi.md
+- name: Context.IO - Get Accounts Messages Message Thread
+  x-api-slug: accountsidmessagesmessage-idthread-get
+  description: Gets information about all messages of the thread a given message is
+    in. This returns an array with the same structure as getting information on a
+    single message for every message in the thread.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg
+  humanURL: http://context.io/
+  baseURL: https://api.context.io//2.0/
+  tags: API LIfeyclessss, Stack Network, Technology, SaaS, Mobile, API Provider, Emails,
+    Messages, Profiles, Emails, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidmessagesmessage-idthread-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/threads/master/_listings/context-io/accountsidmessagesmessage-idthread-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://constant.contact.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://context.io.stack.network
 - type: x-base
   url: https://api.context.io/
 - type: x-blog

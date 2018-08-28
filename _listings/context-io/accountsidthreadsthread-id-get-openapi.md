@@ -140,6 +140,29 @@ paths:
       - Accounts
       - Threads
       - Thread
+  /accounts/{id}/messages/{message_id}/thread:
+    get:
+      summary: Get Accounts Messages Message Thread
+      description: Gets information about all messages of the thread a given message
+        is in. This returns an array with the same structure as getting information
+        on a single message for every message in the thread.
+      operationId: getAccountMessageThread_
+      x-api-path-slug: accountsidmessagesmessage-idthread-get
+      parameters:
+      - in: path
+        name: id
+        description: Unique id of an account accessible through your API key
+      - in: path
+        name: message_id
+        description: Unique id of a message
+      responses:
+        200:
+          description: OK
+      tags:
+      - Accounts
+      - Messages
+      - Message
+      - Thread
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

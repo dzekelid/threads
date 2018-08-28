@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Microsoft Graph
 x-complete: 1
@@ -34,4 +33,23 @@ paths:
       tags:
       - List
       - Threads
----
+    post:
+      summary: Create Thread
+      description: Create thread Start a new conversation by first creating a thread.
+      operationId: CreateThread
+      x-api-path-slug: groupsidthreads-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: Bearer %token%
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Thread
